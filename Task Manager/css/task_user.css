@@ -1,0 +1,91 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  color: #3d3d3d;
+  display: grid;
+  grid-template-rows: 70px auto;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: #ddf7ff;
+  grid-row: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+nav p {
+  font-size: 24px;
+}
+
+.logo {
+  padding-left: 10px;
+}
+
+.logout {
+  padding-right: 10px;
+}
+
+.abajo {
+  background: url("../img/blue_bg.png") no-repeat center center;
+  background-size: cover;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasks_container {
+  width: 600px;
+  height: 650px;
+  background-color: #b6edff;
+  border-radius: 10px;
+  box-shadow: -4px -4px 8px rgba(215, 245, 255, 0.25),
+    8px 8px 8px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-rows: 10% 10% auto;
+}
+
+.form_container {
+  place-self: center;
+  grid-row: 2;
+  width: 550px;
+  height: 60px;
+  background: #93e4ff;
+  box-shadow: -4px -4px 8px rgba(215, 245, 255, 0.25),
+    8px 8px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form_container h2 {
+  grid-row: 1;
+  font-size: 24px;
+  text-align: center;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+  height: 24px;
+}
+
+.tasktable {
+  place-self: center;
+  grid-row: 3;
+  width: 550px;
+  height: 450px;
+  background: #93e4ff;
+  box-shadow: -4px -4px 8px rgba(215, 245, 255, 0.25),
+    8px 8px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/task_user.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="./index.html"><img src="../img/logo_dark.svg" alt="logo" /></a>
+      </div>
+      <p>¡Bienvenido, Usuario!</p>
+      <div class="logout">
+        <a href="./index.html"
+          ><img src="../img/logout_icon.svg" alt="Salir"
+        /></a>
+      </div>
+    </nav>
+    <section class="abajo">
+      <div class="tasks_container">
+        <h2>Tareas</h2>
+        <div class="form_container">
+          <form action="" method="POST">
+            <select name="filtro" id="filtro">
+              <option value="status">Estatus</option>
+              <option value="task_type">Etiqueta</option>
+            </select>
+            <input type="search" placeholder="Buscar" name="search" />
+            <div class="btn">
+              <input
+                type="image"
+                src="../img/search_icon.svg"
+                name="search"
+                value="Buscar"
+              />
+            </div>
+          </form>
+          </div>
+          <div class="botones">
+            <div class="btn">
+              <input
+                type="image"
+                src="../img/new_task_icon.svg"
+                name="new_task"
+                value="New Image"
+              />
+            </div>
+            <div class="btn">
+              <input
+                type="image"
+                src="../img/delete_task_icon.svg"
+                name="delete_task"
+                value="Delete Image"
+              />
+            </div>
+            <div class="btn">
+              <input
+                type="image"
+                src="../img/edit_task_icon.svg"
+                name="edit_task"
+                value="Edit Image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="tasktable"></div>
+      </div>
+    </section>
+  </body>
+</html>

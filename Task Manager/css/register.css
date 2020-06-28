@@ -1,0 +1,157 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+}
+.left {
+  grid-column: 1;
+  background: url("../img/tasks_img.png") no-repeat center center;
+  background-size: cover;
+}
+
+.right {
+  grid-column: 2;
+  background: url("../img/blue_bg.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  grid-row: 1;
+  padding: 20px 0 0 20px;
+  width: 268px;
+  height: auto;
+}
+
+.logo img {
+  width: 268px;
+  height: auto;
+}
+
+.loginbox {
+  color: #3d3d3d;
+  position: absolute;
+  width: 400px;
+  height: 550px;
+  background-color: #b6edff;
+  border-radius: 10px;
+  box-shadow: -4px -4px 8px rgba(215, 245, 255, 0.25),
+    8px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.loginbox p {
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.loginbox h2 {
+  text-align: center;
+  margin: 30px auto 10px auto;
+}
+
+.form {
+  width: 300px;
+  height: 280px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  border: none;
+  background: #a1daed;
+  height: 50px;
+  width: 300px;
+  color: #686767;
+  font-size: 16px;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border: 3px solid #63b5e4;
+}
+
+.loginbox h4 {
+  margin: 20px auto 5px auto;
+}
+input[type="submit"] {
+  display: block;
+  margin: 45px auto;
+  border: none;
+  outline: none;
+  background-color: #86e1ff;
+  box-shadow: -2px -2px 2px #caf2ff, 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  color: #3d3d3d;
+  font-size: 18px;
+  width: 100px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 1050px) {
+  body {
+    grid-template-columns: 100% 0;
+    grid-template-rows: 300px auto;
+    overflow: auto;
+  }
+  .left {
+    grid-row: 1;
+    background: url("../img/tablet_register_img.png") no-repeat center center;
+    background-size: cover;
+  }
+
+  .right {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    grid-template-rows: 100px auto;
+  }
+  .left {
+    background: url("../img/phone_register_img.png") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    padding: 0 0 0 10px;
+    width: 170px;
+    height: auto;
+  }
+
+  .logo img {
+    width: 170px;
+    height: auto;
+  }
+
+  .loginbox {
+    width: 350px;
+  }
+
+  .loginbox h2 {
+    font-size: 20px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: 280px;
+  }
+}

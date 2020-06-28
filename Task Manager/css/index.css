@@ -1,0 +1,216 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  overflow: hidden;
+}
+.left {
+  grid-column: 1;
+  background: url("../img/tasks_img.png") no-repeat center center;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.right {
+  grid-column: 2;
+  background: url("../img/blue_bg.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  grid-row: 1;
+  padding: 20px 0 0 20px;
+  width: 268px;
+  height: auto;
+}
+
+.logo img {
+  width: 268px;
+  height: auto;
+}
+
+.txtcont {
+  grid-row: 2;
+  align-self: center;
+  position: relative;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txt {
+  position: absolute;
+  color: white;
+  width: 400px;
+  height: auto;
+  font-size: 36px;
+}
+
+.loginbox {
+  color: #3d3d3d;
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  background-color: #b6edff;
+  border-radius: 10px;
+  box-shadow: -4px -4px 8px rgba(215, 245, 255, 0.25),
+    8px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.loginbox a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.loginbox h2 {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.form {
+  width: 300px;
+  height: 280px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: none;
+  background: #a1daed;
+  height: 50px;
+  width: 300px;
+  padding-left: 15px;
+  color: #686767;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border: 3px solid #63b5e4;
+}
+
+.loginbox h4 {
+  margin: 30px auto 5px auto;
+}
+input[type="submit"] {
+  display: block;
+  margin: 30px auto 20px auto;
+  border: none;
+  outline: none;
+  background-color: #86e1ff;
+  box-shadow: -2px -2px 2px #caf2ff, 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  color: #3d3d3d;
+  font-size: 18px;
+  width: 100px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 1050px) {
+  body {
+    grid-template-columns: 100% 0;
+    grid-template-rows: 400px 1fr;
+    overflow: auto;
+  }
+  .left {
+    grid-row: 1;
+    background: url("../img/tablet_login_img.png") no-repeat center center;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 30%;
+  }
+
+  .right {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .txtcont {
+    grid-row: 2;
+    justify-self: end;
+    align-self: center;
+    padding: 0;
+    width: 450px;
+    height: 170px;
+    margin: 0;
+  }
+
+  .txtcont img {
+    transform: scaleX(-1);
+    width: 450px;
+    height: 170px;
+  }
+
+  .txt {
+    width: 340px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    grid-template-rows: 220px auto;
+  }
+  .left {
+    background: url("../img/phone_login_img.png") no-repeat center center;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 35% auto;
+  }
+
+  .logo {
+    padding: 10px 0 0 10px;
+    width: 170px;
+    height: auto;
+  }
+
+  .logo img {
+    width: 170px;
+    height: auto;
+  }
+
+  .txtcont {
+    grid-row: 2;
+    justify-self: end;
+    align-self: center;
+    width: 255px;
+    height: 100px;
+  }
+
+  .txtcont img {
+    width: 280px;
+    height: 100px;
+  }
+
+  .txt {
+    width: 225px;
+    font-size: 20px;
+  }
+
+  .loginbox {
+    width: 350px;
+  }
+
+  .loginbox h2 {
+    font-size: 20px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 280px;
+  }
+}
